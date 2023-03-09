@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctime>
+#include <algorithm>
 
 
 #define IN "P05IN.txt"
@@ -37,13 +38,14 @@ int main() {
                 if (st[i] == g[i]) {
                     A++;
                     st[i] = -1;
-                    g[i] = -1;
+                    //g[i] = -1;
                 }
             }
             if (g[0] == 0) {
                 flag = false;
             }
             else {
+                /*
                 //check B
                 for (int i = 0; i < leng; i++) {
                     if (st[i] != -1) {
@@ -55,8 +57,22 @@ int main() {
                             }
                         }
                     }
+                    */
+                for (int j = 1; j <= 9; j++)
+                {
+                    // named for counting same number in Answer & Guess
+                    int iCntAns = 0;
+                    int iCntGue = 0;
+                    for (int i = 0; i < leng; i++)
+                    {
+                        if (j == s[i])
+                            iCntAns++;
+                        if (j == g[i])
+                            iCntGue++;
+                    }
+                    B += std::min(iCntAns, iCntGue);
                 }
-                printf("(%d,%d)\n", A, B);
+                printf("(%d,%d)\n", A, B-A);
             }
         }
         delete[] s, g, st;
