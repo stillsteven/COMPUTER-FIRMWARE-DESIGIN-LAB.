@@ -1,3 +1,3 @@
 # COMPUTER-FIRMWARE-DESIGIN-LAB.
 
-This is my COMPUTER-FIRMWARE-DESIGIN-LAB. questions example code.
+This is my university COMPUTER-FIRMWARE-DESIGIN-LAB. course questions example code.
