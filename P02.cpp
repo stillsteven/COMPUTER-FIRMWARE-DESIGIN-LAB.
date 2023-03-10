@@ -12,24 +12,6 @@ int main() {
     freopen(OUT, "w", stdout);
     clock_t cS = clock();
 
-    /*
-    int n;
-    while (scanf("%d", &n) == 1) {
-        int count = 0;
-        long long lln = n;
-
-        while (lln !=1) {
-            count++;
-            if (lln % 2 != 0) {
-                lln = 3 * lln + 1;
-            }
-            else {
-                lln = lln / 2;
-            }
-        }
-        printf("%d\n", count);
-    }
-    */
 
     char c;
     bool left = true;
