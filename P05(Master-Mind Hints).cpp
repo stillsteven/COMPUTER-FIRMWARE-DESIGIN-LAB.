@@ -45,19 +45,6 @@ int main() {
                 flag = false;
             }
             else {
-                /*
-                //check B
-                for (int i = 0; i < leng; i++) {
-                    if (st[i] != -1) {
-                        for (int j = 0; j < leng; j++) {
-                            if (st[j] == g[i]) {
-                                B++;
-                                st[j] = -1;
-                                break;
-                            }
-                        }
-                    }
-                    */
                 for (int j = 1; j <= 9; j++)
                 {
                     // named for counting same number in Answer & Guess
